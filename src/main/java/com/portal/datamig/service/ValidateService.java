@@ -51,10 +51,7 @@ public class ValidateService {
                 throw new RuntimeException(e);
             }
         });
-        String srcfolder = "../DMUtil/Reports/Validate/";
-        String destFolder = "../DMUtil/Archieve";
-       FileUtils.moveDirectoryToDirectory(FileUtils.getFile(srcfolder), FileUtils.getFile(destFolder),true);
-
+        
     }
 
     public Map<String, List<String>> callValidationProgram(String selectedFolder)
